@@ -1,0 +1,2 @@
+- name: install Postfix
+  apt: name=postfix
