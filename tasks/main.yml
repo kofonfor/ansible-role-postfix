@@ -1,2 +1,6 @@
 - name: install Postfix
   apt: name=postfix
+
+- name: put main.cf
+  template: src=main.cf dest=/etc/postfix/main.cf
+  notify: reload postfix
